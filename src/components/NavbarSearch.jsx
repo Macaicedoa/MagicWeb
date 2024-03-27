@@ -1,5 +1,5 @@
 import { useState } from "react"
-import Lupa from "./Lupa.JSX"
+import Lupa from "./Lupa.jsx"
 import { useNavigate } from "react-router-dom";
 
 function NavbarSearch({onExplore}) {
