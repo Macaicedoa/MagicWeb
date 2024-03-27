@@ -1,4 +1,4 @@
-import explorerI1 from '../assets/explorerI1.png'
+import explorerI1 from '/assets/explorerI1.png'
 import Boton from './Boton'
 
 function ContentExplorePage({callbackCards,callbackSets,isTheCards,isTheSets}) {
