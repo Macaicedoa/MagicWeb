@@ -85,7 +85,7 @@ const cards1 = [
     },
     {
         id: 15,
-        card: "src/assets/ganga1.png",
+        card: "/assets/ganga1.png",
         cardname: "Liliana",
         price: "0,19 €"
     },
