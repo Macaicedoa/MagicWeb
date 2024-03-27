@@ -19,29 +19,29 @@ const Banner = () => {
   const items = [
   {
     id:1,
-    image: new URL("assets/Banner_1.png")
+    image: "assets/Banner_1.png"
   },
   {
     id:2,
-    image: new URL("assets/Banner_2.png")
+    image: "assets/Banner_2.png"
   },
   {
     id:3,
-    image: new URL("assets/Banner_3.png"),
+    image: "assets/Banner_3.png",
   }
   ];
   const itemsMob = [
     {
       id:1,
-      image: new URL("assets/Banner_1_mob.png")
+      image: "assets/Banner_1_mob.png"
     },
     {
       id:2,
-      image: new URL("assets/Banner_2_mob.png")
+      image: "assets/Banner_2_mob.png"
     },
     {
       id:3,
-      image: new URL("assets/Banner_3_mob.png")
+      image: "assets/Banner_3_mob.png",
     }
     ];
   const goToSlide = (slideIndex) => {
