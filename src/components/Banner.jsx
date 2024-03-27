@@ -19,7 +19,7 @@ const Banner = () => {
   const items = [
   {
     id:1,
-    image: "src/assets/Banner_1.png"
+    image: "assets/Banner_1.png"
   },
   {
     id:2,
