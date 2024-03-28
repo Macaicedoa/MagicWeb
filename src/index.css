@@ -2487,6 +2487,10 @@ width: 15px;
 height: 5px;
 }
 
+.ventas{
+  margin: 30px 0px;
+}
+
 .top{
   display: flex;
   flex-direction: row;
@@ -2497,6 +2501,7 @@ height: 5px;
   border-bottom: 1px solid var(--clr-neon);
   color: var(--clr-neon);
   white-space: nowrap;
+  font-weight: 700;
 }
 .top_prices{
     display: flex;
@@ -2638,8 +2643,19 @@ height: 5px;
     border: black 1px solid;
 } */
 @media (width < 1000px){ 
+  .Ventas{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    display: flex;
+    flex-direction: column;
+  }
   .top{
     flex-direction: column;
+    margin-bottom: 30px;
+  }
+  .top:nth-child(2)>div{
+    order: 2;
   }
 }
 @media (width < 700px){
@@ -2668,7 +2684,7 @@ height: 5px;
   display: none;
 }
 .Carousel{
-  max-width: 550px;
+  max-width: 480px;
   height: 730px;
   display: flex;
   flex-direction: row;
@@ -2698,15 +2714,17 @@ height: 5px;
 .indicators{
   display: flex;
   justify-content: center;
-  position: relative;
-  top: 700px;
-  right: 270px;
+  position: absolute;
+  top: 750px;
   height: 8px;
   min-width: 50px;
   overflow: hidden;
   border-radius: 20px;
   border: white 1px solid;
+  left: 50%;
 }
+
+
 }
 @media (width > 700px){
 .arrowUp_button {
@@ -2726,6 +2744,80 @@ height: 5px;
 .img_group_mob{
   display: none;
 }
+}
+
+@media (width < 650px){
+  .top{
+    width: 100%;
+  }
+}
+
+@media (width < 500px){
+  .HowToCardTop-container {
+   height: 300px; 
+  }
+  .HowToCardButtom-container {
+    height: 300px; 
+  }
+
+  .img_banner {
+    width: 389px;
+    height: 630px;
+  }
+  .Carousel {
+    max-width: 380px;
+    height: 630px;
+    flex-direction: column;
+  }
+  .indicators {
+    top: 650px;
+  }
+  .top{
+    width: 100%;
+  }
+  .Ventas{
+    width: 90%;
+  }
+  .top_prices{
+    width: 100%;
+  }
+  .title_top {
+    width: 90%;
+  }
+  .price_list {
+    width: 90%;
+    padding: 0 5%;
+  }
+  .top_box{
+    width: 100%;
+  }
+  .card_box{
+    width: 100%;
+  }
+  .text_card {
+    max-width: 150px;
+    min-width: 150px;
+  }
+  .price {
+    left: 25px;
+  }
+
+}
+
+@media (width < 450px){
+  .HowToCardTop-container {
+    height: 250px;
+}
+  .HowToCardButtom-container {
+    height: 250px;
+  }
+  .div2{
+    text-align: center;
+  }
+  .prices_text {
+    white-space: wrap;
+    text-align: center;
+  }
 }
 
 .arrow_svg{
