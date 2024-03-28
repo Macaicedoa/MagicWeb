@@ -725,8 +725,9 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 70px;
+    margin-top: 40px;
     margin-bottom: 30px;
+
 }
 
 .section-main-content>button{
@@ -1001,6 +1002,9 @@ button{
 }
 
 @media (max-width:900px) {
+  .navbar-container {
+    position: relative;
+  }
     .navbar{
         padding: 0 24px;
     }
@@ -1098,6 +1102,10 @@ button{
     .explore-button-active{
         border-bottom: solid 1.5px var(--background-color-dark);
         margin-bottom: -1px;
+    }
+
+    .section-main-content{
+      overflow-x: hidden;
     }
 
 }
@@ -2644,7 +2652,7 @@ height: 5px;
     top: 0px;  
     border: black 1px solid;
 } */
-@media (width < 1000px){ 
+@media (width < 1025px){ 
   .Ventas{
     margin-top: 30px;
     display: flex;
