@@ -5,7 +5,7 @@ function ContentExplorePage({callbackCards,callbackSets,isTheCards,isTheSets}) {
   return (
     <div className='content-explore-page'>
         <div className='content-explore-page-title'>
-            <h3>What are You looking for?</h3>
+            <h3>Look at what We have for you!</h3>
             <img src={explorerI1} alt="character of the cards" />
         </div>
         <div className='content-explore-page-buttons'>
