@@ -34,7 +34,7 @@ function Menu({isOpen,setOpen,logOut}) {
     <div className={"user-menu "+ classClose}>
         <Boton Boton text={<CloseIcon/>} callback={()=>{return(closingMenu())}} isDisabled={false}/>
         <div className="user-menu-photo">
-        <img src="src\assets\User.png" alt="foto usuario" width={150}/>
+        <img src="/assets/User.png" alt="foto usuario" width={150}/>
           <h3>{googleApiUser?googleApiUser:`Jace Beleren`}</h3>
         </div>
         <div className="user-menu-content">
