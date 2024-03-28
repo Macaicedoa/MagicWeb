@@ -725,7 +725,7 @@ button{
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin-top: 40px;
+    margin-top: 70px;
     margin-bottom: 30px;
 
 }
@@ -1105,6 +1105,7 @@ button{
     }
 
     .section-main-content{
+      margin-top: 40px;
       overflow-x: hidden;
     }
 
