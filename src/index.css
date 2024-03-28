@@ -1337,6 +1337,8 @@ button{
     .sections-overlay>div {
         max-height: 70%;     
         padding: 24px 24px;   
+        position: absolute;
+        top: 100px;
     }
 
     .registration-overlay>div>form {
