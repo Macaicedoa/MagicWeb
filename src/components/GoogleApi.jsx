@@ -19,20 +19,28 @@ function GoogleApi({callbacks}){
         setUser({});
         document.getElementById("signInDiv").hidden=false;
     }
-    
- useEffect(() =>{
-    /* google global   */
-    google.accounts.id.initialize({        
-        client_id:"617647435658-g3i0qu59fr1rc2hltjjdu295ucomrakg.apps.googleusercontent.com",
-        callback:handleCallbackResponse
-    });
 
-    google.accounts.id.renderButton(
-        document.getElementById("signInDiv"),
-        {theme:"outline", size:"large"}
-    );
-    google.accounts.id.prompt();
- },[])
+    
+
+    useEffect(() =>{
+        const initializeGoogleAccount = async () => {
+            /* google global   */
+            const clientID = `${import.meta.env.VITE_GOOGLE_API}`;
+            
+            await google.accounts.id.initialize({        
+                client_id: clientID,
+                callback: handleCallbackResponse
+            });
+    
+            google.accounts.id.renderButton(
+                document.getElementById("signInDiv"),
+                { theme: "outline", size: "large" }
+            );
+            google.accounts.id.prompt();
+        }
+    
+        initializeGoogleAccount();
+    }, []);
 
     return(
         <div>
