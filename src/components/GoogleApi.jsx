@@ -29,7 +29,8 @@ function GoogleApi({callbacks}){
             
             await google.accounts.id.initialize({        
                 client_id: clientID,
-                callback: handleCallbackResponse
+                callback: handleCallbackResponse,
+                allowed_parent_origin: "https://",
             });
     
             google.accounts.id.renderButton(
